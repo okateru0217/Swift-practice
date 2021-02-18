@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B116863F25DDD6A900F8C004 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = B116863D25DDD6A900F8C004 /* correct.png */; };
+		B116864025DDD6A900F8C004 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = B116863E25DDD6A900F8C004 /* incorrect.png */; };
 		B1CD16EE25DD3955002F218D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CD16ED25DD3955002F218D /* AppDelegate.swift */; };
 		B1CD16F025DD3955002F218D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CD16EF25DD3955002F218D /* SceneDelegate.swift */; };
 		B1CD16F225DD3955002F218D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CD16F125DD3955002F218D /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B116863D25DDD6A900F8C004 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		B116863E25DDD6A900F8C004 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
 		B1CD16EA25DD3955002F218D /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CD16ED25DD3955002F218D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1CD16EF25DD3955002F218D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B116863C25DDD6A900F8C004 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				B116863D25DDD6A900F8C004 /* correct.png */,
+				B116863E25DDD6A900F8C004 /* incorrect.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		B1CD16E125DD3955002F218D = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +83,7 @@
 				B1CD16F325DD3955002F218D /* Main.storyboard */,
 				B1CD170A25DD4269002F218D /* quiz.csv */,
 				B1CD16F625DD395B002F218D /* Assets.xcassets */,
+				B116863C25DDD6A900F8C004 /* image */,
 				B1CD16F825DD395B002F218D /* LaunchScreen.storyboard */,
 				B1CD16FB25DD395B002F218D /* Info.plist */,
 			);
@@ -133,6 +147,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B116863F25DDD6A900F8C004 /* correct.png in Resources */,
+				B116864025DDD6A900F8C004 /* incorrect.png in Resources */,
 				B1CD16FA25DD395B002F218D /* LaunchScreen.storyboard in Resources */,
 				B1CD16F725DD395B002F218D /* Assets.xcassets in Resources */,
 				B1CD16F525DD3955002F218D /* Main.storyboard in Resources */,
