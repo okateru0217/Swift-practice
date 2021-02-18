@@ -1,0 +1,6 @@
+print(Optional("a")!)
+var testArr = [String]()
+testArr.append("test")
+print(testArr)
+testArr.append(Optional("a")!)
+print(testArr)

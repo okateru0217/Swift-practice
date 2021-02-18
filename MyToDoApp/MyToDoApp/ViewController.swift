@@ -61,14 +61,15 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         alert.addTextField(configurationHandler: nil)
         // テキストフィールドに、編集するタスクを表示
         alert.textFields?.first?.text = taskArr[indexPath.row]
+        
         // OKボタン押下時の処理
         alert.addAction(UIAlertAction(
             title: "OK",
             style: .default,
             handler: {(alert: UIAlertAction) in
                 // 配列を置き換える
-                self.taskArr[indexPath.row] = "test"
-                print(self.taskArr)
+                self.taskArr.insert((alert.textFields?.first?.text)!, at: 0)
+                tableView.reloadRows(at: [indexPath as IndexPath], with: .none)
             }
         ))
         // キャンセルボタン押下時の処理
