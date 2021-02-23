@@ -68,7 +68,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
             style: .default,
             handler: {(alert: UIAlertAction) in
                 // 配列を置き換える
-                self.taskArr.insert((alert.textFields?.first?.text)!, at: 0)
+                self.taskArr[indexPath.row] = (alert.textFields?.first?.text)!
                 tableView.reloadRows(at: [indexPath as IndexPath], with: .none)
             }
         ))
