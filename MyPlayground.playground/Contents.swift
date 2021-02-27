@@ -237,21 +237,122 @@
 //let some = SomeStruct()
 //some.printSharedValue()
 
-struct Progression {
-  var numbers: [Int]
-  subscript(index: Int) -> Int {
-    get {
-      return numbers[index]
-    }
-    set {
-      numbers[index] = newValue
-    }
-  }
-}
-var progression = Progression(numbers: [1, 2, 3])
-let element1 = progression[1] //2
-print(element1)
+//struct Progression {
+//  var numbers: [Int]
+//  subscript(index: Int) -> Int {
+//    get {
+//      return numbers[index]
+//    }
+//    set {
+//      numbers[index] = newValue
+//    }
+//  }
+//}
+//var progression = Progression(numbers: [1, 2, 3])
+//let element1 = progression[1] //2
+//print(element1)
+//
+//progression[1] = 4
+//let element2 = progression[1] //4
+//print(element2)
 
-progression[1] = 4
-let element2 = progression[1] //4
-print(element2)
+//struct SomeStruct {
+//    let value = 123
+//
+//    func printValue() {
+//        print(self.value)
+//    }
+//}
+//
+//var someStruct = SomeStruct()
+//someStruct.printValue()
+
+//struct SomeStruct {
+//    var variable = 123
+//    static var staticVariable = 789
+//}
+//
+//var someStruct = SomeStruct()
+//SomeStruct.staticVariable = 456
+//print(SomeStruct.staticVariable)
+
+//struct Greeting {
+//    var to = "Bado" {
+//        willSet {
+//            print("\(self.to), \(newValue)")
+//        }
+//        didSet {
+//            print(self.to)
+//        }
+//    }
+//}
+//
+//var greeting = Greeting()
+//greeting.to = "Kazamidori"
+
+//struct Greeting {
+//    var to = "Bado"
+//    var body: String {
+//        get {
+//            return "\(to)"
+//        }
+//    }
+//}
+//
+//let greeting = Greeting()
+//print(greeting.body)
+
+//struct Greeting {
+//    let to: String
+//    var body: String {
+//        return "\(to)"
+//    }
+//
+//    init(to: String) {
+//        self.to = to
+//    }
+//}
+//
+//let greeting = Greeting(to: "Kazamidori")
+//print(greeting.body)
+
+//extension String {
+//    func printSelf() {
+//        print(self)
+//    }
+//}
+//let string = "abc"
+//string.printSelf()
+
+//enum BloodType: String {
+//    case a = "a"
+//    case b = "b"
+//    case o = "o"
+//    case ab = "ab"
+//}
+//let typeAB: BloodType = .ab
+//typeAB.rawValue
+//
+//enum Signal: Int {
+//    case blue = 1
+//    case yellow = 2
+//    case red = 3
+//}
+//
+//let signalBlue: Signal = .blue
+//signalBlue.rawValue //1
+//
+//let signalYello: Signal? = Signal(rawValue: 2)
+//print(signalYello?.rawValue)
+
+enum IntEnum: Int {
+    case one
+    case two
+    case three
+}
+print(IntEnum.one.rawValue)
+
+enum BloodType: String {
+    case ab
+}
+print(BloodType.ab.rawValue)
