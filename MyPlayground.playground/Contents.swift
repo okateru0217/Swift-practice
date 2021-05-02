@@ -1,28 +1,26 @@
 import UIKit
 
-var testDic = [
-    ["date": "2021年4月18日", "time": 1240]
-]
+private var detailRecordItem = [RecordItem]()
 
-// 追加
-testDic.append(["date": "2021年4月19日", "time": 0])
-print(testDic)
-// 更新
-testDic[testDic.count - 1]["time"] = 2140
-print(testDic.last!["time"]!)
-
-
-func currentMonth() -> String {
-    let date = DateFormatter()
-    date.setLocalizedDateFormatFromTemplate("M")
-    date.locale = Locale(identifier: "ja_JP")
-    let today = Date()
-    return date.string(from: today)
+struct RecordItem {
+    var item: String
+    var time: Int
 }
 
-let nextMonth = Calendar.current.date(byAdding: .month, value: 1, to: Date())
-print(nextMonth)
-testDic(dic: january)
-//for i in 1...31 {
-//    january.append(["date": "1/\(i)", "time": "0"])
-//}
+//let record = RecordItem(item: "item", time: 10)
+//detailRecordItem.append(record)
+//print(detailRecordItem)
+
+struct RecordItems {
+    var total: RecordItem
+    var today: RecordItem
+    
+    init() {
+        total = RecordItem(item: "total", time: 10)
+        today = RecordItem(item: "today", time: 1)
+    }
+}
+var recordItems = RecordItems()
+
+detailRecordItem.append(contentsOf: [recordItems.total, recordItems.today])
+print(detailRecordItem)
