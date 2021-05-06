@@ -39,12 +39,6 @@ class UnitTestTests: XCTestCase {
         }
     }
 
-    func testBMI() {
-       let p = Person("hanako", 140, 40)
-       let ret = p.bmi()
-       XCTAssertEqual(ret, 20.41)
-   }
-
     func testPlus() {
         let viewController = ViewController()
         let result = viewController.plus(a: 3, b: 4)
