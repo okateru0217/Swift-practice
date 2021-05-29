@@ -24,3 +24,26 @@ var recordItems = RecordItems()
 
 detailRecordItem.append(contentsOf: [recordItems.total, recordItems.today])
 print(detailRecordItem)
+
+// クロージャー
+let double = { (x: Int) -> Int in
+    return x * 2
+}
+double(2)
+
+var plus = { (x: Int) -> Int in
+    var y = 0
+    y += x
+    return x + y
+}
+plus(3)
+
+var multi = { (x: Int, y: Int) -> Int in
+    return x + y
+}
+multi(3, 7)
+
+var multiReturn = { (x: Int, y: Int) -> Int in
+    x + y
+}
+multiReturn(2, 6)
