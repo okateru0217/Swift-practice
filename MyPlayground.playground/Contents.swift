@@ -47,3 +47,9 @@ var multiReturn = { (x: Int, y: Int) -> Int in
     x + y
 }
 multiReturn(2, 6)
+
+var closure: (String) -> Int
+closure = { string in
+    string.count
+}
+closure("abcd")
