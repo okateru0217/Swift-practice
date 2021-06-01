@@ -44,4 +44,10 @@ class UnitTestTests: XCTestCase {
         let result = viewController.plus(a: 3, b: 4)
         XCTAssertEqual(result, 7)
     }
+    
+    func testMulti() {
+        let viewController = ViewController()
+        let result = viewController.multi(a: 3, b: 4)
+        XCTAssertEqual(result, 2)
+    }
 }
