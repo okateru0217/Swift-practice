@@ -9,6 +9,8 @@ import XCTest
 @testable import UnitTest
 
 class UnitTestTests: XCTestCase {
+    
+    var viewController: ViewController!
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,6 +22,7 @@ class UnitTestTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
+        self.viewController = ViewController()
     }
 
     override func tearDown() {
@@ -40,14 +43,10 @@ class UnitTestTests: XCTestCase {
     }
 
     func testPlus() {
-        let viewController = ViewController()
-        let result = viewController.plus(a: 3, b: 4)
-        XCTAssertEqual(result, 7)
+        XCTAssertEqual(viewController.plus(a: 3, b: 4), 7)
     }
     
     func testMulti() {
-        let viewController = ViewController()
-        let result = viewController.multi(a: 3, b: 4)
-        XCTAssertEqual(result, 2)
+        XCTAssertEqual(viewController.multi(a: 3, b: 4), 2)
     }
 }
