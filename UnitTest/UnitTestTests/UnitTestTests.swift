@@ -43,10 +43,20 @@ class UnitTestTests: XCTestCase {
     }
 
     func testPlus() {
-        XCTAssertEqual(viewController.plus(a: 3, b: 4), 7)
+        XCTAssertEqual(viewController.plus(a: 3, b: 4), 7, "3 + 4 が 7")
     }
     
     func testMulti() {
         XCTAssertEqual(viewController.multi(a: 3, b: 4), 2)
+    }
+    
+    func testSafeDivisionRunActivity() {
+        XCTContext.runActivity(named: "通常の割り算") { _ in
+            XCTAssertEqual(viewController.safeDivision(x: 6, y: 3), 2)
+            XCTAssertEqual(viewController.safeDivision(x: 6, y: 2), 3)
+        }
+        XCTContext.runActivity(named: "0除算") { _ in
+            XCTAssertNil(viewController.safeDivision(x: 6, y: 0))
+        }
     }
 }

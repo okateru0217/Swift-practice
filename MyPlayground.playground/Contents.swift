@@ -53,3 +53,32 @@ closure = { string in
     string.count
 }
 closure("abcd")
+
+// override
+class Fish {
+    var distance = 0
+    func stop() {
+        print("止まりました")
+    }
+}
+
+class Karei: Fish {
+    override func stop() {
+        let distance: Int = 3
+        print(distance + 5)
+    }
+}
+
+class Suzuki: Fish {
+    override func stop() {
+        print("ギャーギャー言いながら")
+        super.stop()
+    }
+}
+
+var fish = Fish()
+fish.stop()
+var karei = Karei()
+karei.stop()
+var suzuki = Suzuki()
+suzuki.stop()

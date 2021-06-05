@@ -26,5 +26,13 @@ class ViewController: UIViewController {
         let multiResult = a * b
         return multiResult - 10
     }
+    
+    func safeDivision(x: Int, y: Int) -> Int? {
+        if y == 0 {
+            return nil
+        } else {
+            return x / y
+        }
+    }
 
 }
