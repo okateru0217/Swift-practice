@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,53 +12,10 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="try_anything" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="LWj-su-E2k">
-                                <rect key="frame" x="57.5" y="233.5" width="205" height="13"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="左Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.45000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="97I-6X-H1U">
-                                        <rect key="frame" x="0.0" y="0.0" width="29" height="13"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="97I-6X-H1U" secondAttribute="height" multiplier="59:21" priority="750" id="LEQ-UW-Rby"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.45000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-r6-2YU">
-                                        <rect key="frame" x="88" y="0.0" width="29" height="13"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="右Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.45000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="pPr-JV-RfJ">
-                                        <rect key="frame" x="176" y="0.0" width="29" height="13"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="qbo-r6-2YU" firstAttribute="width" secondItem="97I-6X-H1U" secondAttribute="width" id="1YR-wa-R3w"/>
-                                    <constraint firstItem="pPr-JV-RfJ" firstAttribute="height" secondItem="97I-6X-H1U" secondAttribute="height" id="EfX-Qu-UOm"/>
-                                    <constraint firstItem="qbo-r6-2YU" firstAttribute="height" secondItem="97I-6X-H1U" secondAttribute="height" id="FI8-4A-zcf"/>
-                                    <constraint firstItem="qbo-r6-2YU" firstAttribute="centerX" secondItem="LWj-su-E2k" secondAttribute="centerX" id="Gzf-oe-Sp3"/>
-                                    <constraint firstItem="pPr-JV-RfJ" firstAttribute="width" secondItem="97I-6X-H1U" secondAttribute="width" id="ZK6-ee-OWQ"/>
-                                    <constraint firstItem="qbo-r6-2YU" firstAttribute="centerY" secondItem="LWj-su-E2k" secondAttribute="centerY" id="gvh-SR-bVs"/>
-                                    <constraint firstAttribute="width" secondItem="LWj-su-E2k" secondAttribute="height" multiplier="265:17" id="im8-gp-8oF"/>
-                                    <constraint firstItem="97I-6X-H1U" firstAttribute="width" secondItem="LWj-su-E2k" secondAttribute="width" multiplier="0.142512" priority="750" constant="11.258454106280197" id="uNN-9n-oQX"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="LWj-su-E2k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0c0-os-kbs"/>
-                            <constraint firstItem="LWj-su-E2k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="STt-Z4-ftB"/>
-                            <constraint firstItem="LWj-su-E2k" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.640097" id="yAq-QV-tT8"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
