@@ -15,6 +15,8 @@
 		B16C234C26400C4E0057C226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B16C234A26400C4E0057C226 /* LaunchScreen.storyboard */; };
 		B16C235726400C4F0057C226 /* UnitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16C235626400C4F0057C226 /* UnitTestTests.swift */; };
 		B16C236226400C4F0057C226 /* UnitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16C236126400C4F0057C226 /* UnitTestUITests.swift */; };
+		B1EA117B26981CF700CBAB25 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EA117926981CF700CBAB25 /* TestTableViewCell.swift */; };
+		B1EA117C26981CF700CBAB25 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1EA117A26981CF700CBAB25 /* TestTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B16C235D26400C4F0057C226 /* UnitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16C236126400C4F0057C226 /* UnitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestUITests.swift; sourceTree = "<group>"; };
 		B16C236326400C4F0057C226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1EA117926981CF700CBAB25 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		B1EA117A26981CF700CBAB25 /* TestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				B16C234826400C4E0057C226 /* Assets.xcassets */,
 				B16C234A26400C4E0057C226 /* LaunchScreen.storyboard */,
 				B16C234D26400C4E0057C226 /* Info.plist */,
+				B1EA117926981CF700CBAB25 /* TestTableViewCell.swift */,
+				B1EA117A26981CF700CBAB25 /* TestTableViewCell.xib */,
 			);
 			path = UnitTest;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16C234C26400C4E0057C226 /* LaunchScreen.storyboard in Resources */,
+				B1EA117C26981CF700CBAB25 /* TestTableViewCell.xib in Resources */,
 				B16C234926400C4E0057C226 /* Assets.xcassets in Resources */,
 				B16C234726400C4B0057C226 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B16C234426400C4B0057C226 /* ViewController.swift in Sources */,
+				B1EA117B26981CF700CBAB25 /* TestTableViewCell.swift in Sources */,
 				B16C234026400C4B0057C226 /* AppDelegate.swift in Sources */,
 				B16C234226400C4B0057C226 /* SceneDelegate.swift in Sources */,
 			);

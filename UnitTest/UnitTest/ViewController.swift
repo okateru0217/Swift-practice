@@ -9,8 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var testTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        testTableView.register(UINib(nibName: "TestTableViewCell", bundle: nil), forCellReuseIdentifier: "TestTableViewCell")
+        
+        
         let result = plus(a: 5, b: 10)
         print(result)
         let multiResult = multi(a: 3, b: 4)
@@ -35,4 +40,18 @@ class ViewController: UIViewController {
         }
     }
 
+}
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TestTableViewCell", for: indexPath) as! TestTableViewCell
+        
+        return cell
+    }
+    
+    
 }
