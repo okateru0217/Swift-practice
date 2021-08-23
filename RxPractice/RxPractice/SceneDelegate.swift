@@ -2,10 +2,11 @@
 //  SceneDelegate.swift
 //  RxPractice
 //
-//  Created by 岡澤輝明 on 2021/07/25.
+//  Created by 岡澤輝明 on 2021/08/02.
 //
 
 import UIKit
+import StoreKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
