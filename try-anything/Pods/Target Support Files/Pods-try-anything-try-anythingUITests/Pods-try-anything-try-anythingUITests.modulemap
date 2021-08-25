@@ -1,0 +1,6 @@
+framework module Pods_try_anything_try_anythingUITests {
+  umbrella header "Pods-try-anything-try-anythingUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

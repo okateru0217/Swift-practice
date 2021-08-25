@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  RxPractice
 //
-//  Created by 岡澤輝明 on 2021/07/25.
+//  Created by 岡澤輝明 on 2021/08/02.
 //
 
 import UIKit
@@ -10,23 +10,29 @@ import RxSwift
 import RxCocoa
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var textField: UITextField!
     
-    let disposeBag = DisposeBag()
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let relay = BehaviorRelay<String>(value: "")
-        
-        relay.subscribe {event in
-            self.label.text = event
-        }.disposed(by: disposeBag)
-
-        textField.rx.text.orEmpty
-            .bind(to: relay)
-            .disposed(by: disposeBag)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "RxPracticeTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        print("test")
     }
+    
+}
 
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RxPracticeTableViewCell
+        return cell
+    }
+    
+    
 }
