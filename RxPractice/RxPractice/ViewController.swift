@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "RxPracticeTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-        print("test")
     }
     
 }
