@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 class TestModel {
-    var number = 0
+    var number: String
     
-    init(number: Int) {
-        self.number = number
+    init(number: String) {
+        self.number = number as String
     }
 }
