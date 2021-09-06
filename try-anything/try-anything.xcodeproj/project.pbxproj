@@ -3,16 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0BAB95CA3483A93B5ED88112 /* Pods_try_anything.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033015220A810ED25F77986C /* Pods_try_anything.framework */; };
 		7AF754CB62DC572F2647F7CB /* Pods_try_anything_try_anythingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840B97BFDAA6AEFE71594C72 /* Pods_try_anything_try_anythingUITests.framework */; };
+		B19687D026E4E57B00D16EF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19687CF26E4E57B00D16EF9 /* Main.storyboard */; };
 		B1DA5EFB266B88EC005C9C10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA5EFA266B88EC005C9C10 /* AppDelegate.swift */; };
 		B1DA5EFD266B88EC005C9C10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA5EFC266B88EC005C9C10 /* SceneDelegate.swift */; };
 		B1DA5EFF266B88EC005C9C10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA5EFE266B88EC005C9C10 /* ViewController.swift */; };
-		B1DA5F02266B88EC005C9C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DA5F00266B88EC005C9C10 /* Main.storyboard */; };
 		B1DA5F04266B88F7005C9C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DA5F03266B88F7005C9C10 /* Assets.xcassets */; };
 		B1DA5F07266B88F7005C9C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DA5F05266B88F7005C9C10 /* LaunchScreen.storyboard */; };
 		B1DA5F12266B88F8005C9C10 /* try_anythingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DA5F11266B88F8005C9C10 /* try_anythingTests.swift */; };
@@ -45,11 +45,11 @@
 		75BA4296E2394A75320CCE44 /* Pods-try-anything.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-try-anything.release.xcconfig"; path = "Target Support Files/Pods-try-anything/Pods-try-anything.release.xcconfig"; sourceTree = "<group>"; };
 		840B97BFDAA6AEFE71594C72 /* Pods_try_anything_try_anythingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_try_anything_try_anythingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0A72D49381EBB84C5AAC6E /* Pods-try-anythingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-try-anythingTests.release.xcconfig"; path = "Target Support Files/Pods-try-anythingTests/Pods-try-anythingTests.release.xcconfig"; sourceTree = "<group>"; };
+		B19687CF26E4E57B00D16EF9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B1DA5EF7266B88EC005C9C10 /* try-anything.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "try-anything.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DA5EFA266B88EC005C9C10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1DA5EFC266B88EC005C9C10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B1DA5EFE266B88EC005C9C10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B1DA5F01266B88EC005C9C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1DA5F03266B88F7005C9C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1DA5F06266B88F7005C9C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1DA5F08266B88F7005C9C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,7 +101,6 @@
 				1CC1B6544EAFA054B1617C34 /* Pods-try-anythingTests.debug.xcconfig */,
 				AF0A72D49381EBB84C5AAC6E /* Pods-try-anythingTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -133,8 +132,8 @@
 				B1DA5EFA266B88EC005C9C10 /* AppDelegate.swift */,
 				B1DA5EFC266B88EC005C9C10 /* SceneDelegate.swift */,
 				B1DA5EFE266B88EC005C9C10 /* ViewController.swift */,
-				B1DA5F00266B88EC005C9C10 /* Main.storyboard */,
 				B1DA5F03266B88F7005C9C10 /* Assets.xcassets */,
+				B19687CF26E4E57B00D16EF9 /* Main.storyboard */,
 				B1DA5F05266B88F7005C9C10 /* LaunchScreen.storyboard */,
 				B1DA5F08266B88F7005C9C10 /* Info.plist */,
 			);
@@ -277,9 +276,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19687D026E4E57B00D16EF9 /* Main.storyboard in Resources */,
 				B1DA5F07266B88F7005C9C10 /* LaunchScreen.storyboard in Resources */,
 				B1DA5F04266B88F7005C9C10 /* Assets.xcassets in Resources */,
-				B1DA5F02266B88EC005C9C10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,14 +444,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B1DA5F00266B88EC005C9C10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1DA5F01266B88EC005C9C10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B1DA5F05266B88F7005C9C10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
