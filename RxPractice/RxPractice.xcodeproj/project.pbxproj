@@ -19,6 +19,9 @@
 		B11C153E26BF602400ECEF95 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11C153D26BF602400ECEF95 /* PresentationController.swift */; };
 		B11C154326BF717400ECEF95 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11C154126BF717400ECEF95 /* ModalViewController.swift */; };
 		B11C154426BF717400ECEF95 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B11C154226BF717400ECEF95 /* ModalViewController.xib */; };
+		B19687C026E0787B00D16EF9 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19687BF26E0787B00D16EF9 /* ShadowView.swift */; };
+		B19687CC26E4E04200D16EF9 /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19687CB26E4E04100D16EF9 /* Tabbar.storyboard */; };
+		B19687CE26E4E04F00D16EF9 /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19687CD26E4E04F00D16EF9 /* Tabbar.swift */; };
 		EDB7CF273F7C5E5DE580EA4D /* Pods_RxPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF3C83326BB322555B6578F8 /* Pods_RxPractice.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,9 @@
 		B11C153D26BF602400ECEF95 /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
 		B11C154126BF717400ECEF95 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		B11C154226BF717400ECEF95 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
+		B19687BF26E0787B00D16EF9 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		B19687CB26E4E04100D16EF9 /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
+		B19687CD26E4E04F00D16EF9 /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		B11C151126B7FD7E00ECEF95 /* RxPractice */ = {
 			isa = PBXGroup;
 			children = (
+				B19687CA26E4E01A00D16EF9 /* Tabbar */,
 				B11C153926BF5F3D00ECEF95 /* ModalView */,
 				B11C152D26B80E3F00ECEF95 /* Model */,
 				B11C152626B8013100ECEF95 /* TableViewCell */,
@@ -119,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				B11C152B26B80E3700ECEF95 /* TestModel.swift */,
+				B19687BF26E0787B00D16EF9 /* ShadowView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,6 +147,15 @@
 				B11C153D26BF602400ECEF95 /* PresentationController.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B19687CA26E4E01A00D16EF9 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				B19687CB26E4E04100D16EF9 /* Tabbar.storyboard */,
+				B19687CD26E4E04F00D16EF9 /* Tabbar.swift */,
+			);
+			path = Tabbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19687CC26E4E04200D16EF9 /* Tabbar.storyboard in Resources */,
 				B11C152A26B8038900ECEF95 /* RxPracticeTableViewCell.xib in Resources */,
 				B11C154426BF717400ECEF95 /* ModalViewController.xib in Resources */,
 				B11C151F26B7FD8A00ECEF95 /* LaunchScreen.storyboard in Resources */,
@@ -261,8 +279,10 @@
 				B11C151726B7FD7E00ECEF95 /* ViewController.swift in Sources */,
 				B11C153E26BF602400ECEF95 /* PresentationController.swift in Sources */,
 				B11C152C26B80E3800ECEF95 /* TestModel.swift in Sources */,
+				B19687C026E0787B00D16EF9 /* ShadowView.swift in Sources */,
 				B11C151326B7FD7E00ECEF95 /* AppDelegate.swift in Sources */,
 				B11C151526B7FD7E00ECEF95 /* SceneDelegate.swift in Sources */,
+				B19687CE26E4E04F00D16EF9 /* Tabbar.swift in Sources */,
 				B11C154326BF717400ECEF95 /* ModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

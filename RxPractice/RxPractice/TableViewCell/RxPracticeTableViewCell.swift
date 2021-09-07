@@ -8,22 +8,19 @@
 import UIKit
 
 class RxPracticeTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var numberLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    func setCell(number: TestModel) {
-        self.numberLabel.text = number.number as String
-    }
+//    func setCell(number: TestModel) {
+//        self.numberLabel.text = number.number as String
+//    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
-    
 }
