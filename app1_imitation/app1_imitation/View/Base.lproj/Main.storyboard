@@ -17,14 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KYn-l9-RZK">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="808" id="C2y-dm-bvH"/>
+                                </constraints>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KYn-l9-RZK" secondAttribute="bottom" id="DDe-h3-VQC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KYn-l9-RZK" secondAttribute="trailing" id="cHJ-uO-dUc"/>
                             <constraint firstItem="KYn-l9-RZK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jMm-EC-fWk"/>
                             <constraint firstItem="KYn-l9-RZK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vLA-u4-Pre"/>
