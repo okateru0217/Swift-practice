@@ -9,14 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak private var tableView: UITableView!
     
-    let task = [2, 2]
+    private let task = [2, 2, 2]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
         tableViewRegister()
         // Do any additional setup after loading the view.
     }
@@ -31,12 +32,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-        return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+            return cell
     }
     
     func tableViewRegister() {
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+    }
+    
+    func tableViewFooterCellConfig() {
+        let footerCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "addListCell")!
+        let footerView: UIView = footerCell.contentView
+        tableView.tableFooterView = footerView
     }
     
     
