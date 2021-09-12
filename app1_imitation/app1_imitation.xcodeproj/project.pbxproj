@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B188979226EDE05C00F3CCF0 /* ListAddButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B188979026EDE05C00F3CCF0 /* ListAddButtonTableViewCell.swift */; };
+		B188979326EDE05C00F3CCF0 /* ListAddButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B188979126EDE05C00F3CCF0 /* ListAddButtonTableViewCell.xib */; };
 		B196880726E8F09B00D16EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196880626E8F09A00D16EF9 /* AppDelegate.swift */; };
 		B196880926E8F09B00D16EF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196880826E8F09B00D16EF9 /* SceneDelegate.swift */; };
 		B196880B26E8F09B00D16EF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B196880A26E8F09B00D16EF9 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B188979026EDE05C00F3CCF0 /* ListAddButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAddButtonTableViewCell.swift; sourceTree = "<group>"; };
+		B188979126EDE05C00F3CCF0 /* ListAddButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListAddButtonTableViewCell.xib; sourceTree = "<group>"; };
 		B196880326E8F09A00D16EF9 /* app1_imitation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app1_imitation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B196880626E8F09A00D16EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B196880826E8F09B00D16EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B188978F26EDE00200F3CCF0 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B188979126EDE05C00F3CCF0 /* ListAddButtonTableViewCell.xib */,
+				B196881E26E8F4BB00D16EF9 /* TableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		B19687FA26E8F09A00D16EF9 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +87,7 @@
 		B196881A26E8F18300D16EF9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B188979026EDE05C00F3CCF0 /* ListAddButtonTableViewCell.swift */,
 				B196881D26E8F4BB00D16EF9 /* TableViewCell.swift */,
 				B196880A26E8F09B00D16EF9 /* ViewController.swift */,
 			);
@@ -83,9 +97,9 @@
 		B196881B26E8F19100D16EF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B188978F26EDE00200F3CCF0 /* TableViewCell */,
 				B196880C26E8F09B00D16EF9 /* Main.storyboard */,
 				B196881126E8F0A700D16EF9 /* LaunchScreen.storyboard */,
-				B196881E26E8F4BB00D16EF9 /* TableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +172,7 @@
 				B196882026E8F4BB00D16EF9 /* TableViewCell.xib in Resources */,
 				B196881026E8F0A700D16EF9 /* Assets.xcassets in Resources */,
 				B196880E26E8F09B00D16EF9 /* Main.storyboard in Resources */,
+				B188979326EDE05C00F3CCF0 /* ListAddButtonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +185,7 @@
 			files = (
 				B196880B26E8F09B00D16EF9 /* ViewController.swift in Sources */,
 				B196881F26E8F4BB00D16EF9 /* TableViewCell.swift in Sources */,
+				B188979226EDE05C00F3CCF0 /* ListAddButtonTableViewCell.swift in Sources */,
 				B196880726E8F09B00D16EF9 /* AppDelegate.swift in Sources */,
 				B196880926E8F09B00D16EF9 /* SceneDelegate.swift in Sources */,
 			);
