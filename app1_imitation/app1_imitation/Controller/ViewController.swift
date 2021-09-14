@@ -17,8 +17,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableViewRegister()
+        tableViewFooterCellConfig()
         // Do any additional setup after loading the view.
     }
 

@@ -27,12 +27,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0O-jU-VHw">
-                                                    <rect key="frame" x="20" y="7" width="46" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0O-jU-VHw">
+                                                    <rect key="frame" x="15" y="9.5" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="WlD-FV-YVv"/>
+                                                        <constraint firstAttribute="height" constant="25" id="lop-4d-EiX"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" image="plus" catalog="system"/>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="H0O-jU-VHw" firstAttribute="centerY" secondItem="LDI-um-sGI" secondAttribute="centerY" id="aOn-a6-I6G"/>
+                                                <constraint firstItem="H0O-jU-VHw" firstAttribute="leading" secondItem="LDI-um-sGI" secondAttribute="leading" constant="15" id="pcA-Tb-uc8"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -83,6 +91,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
