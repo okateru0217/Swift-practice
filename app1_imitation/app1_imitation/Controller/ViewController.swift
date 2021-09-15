@@ -19,12 +19,13 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableViewRegister()
         tableViewFooterCellConfig()
-        // Do any additional setup after loading the view.
+    }
+    
+    @objc func tableTapped(_ sender: UITapGestureRecognizer) {
+        print("test")
     }
 
-
 }
-
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,7 +45,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let footerCell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "addListCell")!
         let footerView: UIView = footerCell.contentView
         tableView.tableFooterView = footerView
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tableTapped))
+        self.tableView.tableFooterView?.addGestureRecognizer(tap)
     }
-    
     
 }
