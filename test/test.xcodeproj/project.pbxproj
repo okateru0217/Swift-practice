@@ -13,6 +13,7 @@
 		B18897A826EE262B00F3CCF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18897A626EE262B00F3CCF0 /* Main.storyboard */; };
 		B18897AA26EE263400F3CCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18897A926EE263400F3CCF0 /* Assets.xcassets */; };
 		B18897AD26EE263400F3CCF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18897AB26EE263400F3CCF0 /* LaunchScreen.storyboard */; };
+		B18897F826F81B8A00F3CCF0 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18897F726F81B8A00F3CCF0 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B18897AC26EE263400F3CCF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B18897AE26EE263400F3CCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B18897B426EF1A8400F3CCF0 /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
+		B18897F726F81B8A00F3CCF0 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		B188979F26EE262B00F3CCF0 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				B18897F426F81B3500F3CCF0 /* edit */,
 				B18897B426EF1A8400F3CCF0 /* test.entitlements */,
 				B18897A026EE262B00F3CCF0 /* AppDelegate.swift */,
 				B18897A226EE262B00F3CCF0 /* SceneDelegate.swift */,
@@ -67,6 +70,14 @@
 				B18897AE26EE263400F3CCF0 /* Info.plist */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		B18897F426F81B3500F3CCF0 /* edit */ = {
+			isa = PBXGroup;
+			children = (
+				B18897F726F81B8A00F3CCF0 /* TestViewController.swift */,
+			);
+			path = edit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			files = (
 				B18897A526EE262B00F3CCF0 /* ViewController.swift in Sources */,
 				B18897A126EE262B00F3CCF0 /* AppDelegate.swift in Sources */,
+				B18897F826F81B8A00F3CCF0 /* TestViewController.swift in Sources */,
 				B18897A326EE262B00F3CCF0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
