@@ -1,10 +1,27 @@
 import UIKit
 
-class test {
-    let testLet: UILabel? = nil
+class Human {
+    func sayHello() {
+        print("Hello")
+    }
 }
 
-
-class test1 {
-    var test: String?
+class Man: Human {
+    let sex = "man"
+    
+    func getSex() -> String {
+        return self.sex
+    }
+    
+    func callSuper() {
+        super.sayHello()
+    }
 }
+
+let man = Man()
+
+let sex = man.getSex()
+print(sex)
+
+man.sayHello()
+man.callSuper()
